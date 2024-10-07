@@ -1,0 +1,325 @@
+header{
+    height: 90vh;
+    width: 100vw;
+    animation: change-bg 20s normal infinite;
+    flex-direction: column;
+}
+@keyframes change-bg{
+    0%, 100%{
+        background: url(/assets/images/asset\ 1.png);
+        background-color:#666;
+        background-blend-mode: multiply;
+    }
+    50%{
+        background: url(/assets/images/asset\ 2.png);
+        background-color:#666;
+        background-blend-mode: multiply;
+    }
+}
+.text{
+    flex-direction: column;
+    padding: 50px;
+    line-height: 5rem;
+}
+.text>h2{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.text>h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.banking-partner{
+    width: 100vw;
+    height: 100vh;
+}
+.banking-partner>.container{
+    flex-direction: column;
+    gap: 100px;
+}
+.banking-title>h2{
+    padding: 20px 20px;
+    color: black;
+}
+.banking-content {
+    text-align: center;
+    gap: 200px;
+}
+
+.banking-footer{
+    width: 100%;
+    align-items: flex-start;
+    gap: 50px;
+}
+.banking-card{
+    width: 22%;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.banking-card:hover h4{
+    color: orangered;
+}
+.banking-card>img{
+    align-self: center;
+    height: 75px;
+}
+.banking-card>p{
+    font-size: 1rem;
+}
+
+.travel-destination{
+    height: max-content;
+    width: 100vw;
+    background-color: #fffaf9;
+    padding: 20px 30px;
+}
+.travel-destination>.container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.travel-destination>.container>h2{
+    color: black;
+}
+.images{
+    width: 100%;
+    gap: 20px;
+}
+.image-card {
+    position: relative;
+    width: 25%;
+    border-radius: 15px;
+    overflow: hidden; /* To clip the image inside the card */
+}
+
+.image-card img {
+    height: 100%;
+    border-radius: 15px; /* Ensures the image corners match the card */
+    transition: transform 0.3s ease;
+}
+.image-card>img:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.image-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2; /* Ensures the text stays on top of the image */
+}
+.image-footer {
+    position: absolute;
+    bottom: 10px;
+    right: -100%; /* Start off the screen to the right */
+    background-color: rgba(255, 255, 255);
+    font-weight: bold;
+    color: orangered;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: transform 0.3s ease, right 0.3s ease;
+}
+/* When the user hovers over the card */
+.image-card:hover .image-footer {
+    right: 10px; /* Slides in from the right */
+}
+.popular-activities{
+    width: 100vw;
+    margin-bottom: 20px;
+}
+.popular-activities:hover, .popular-activities:hover .popular-image > img {
+    transform: scale(1.02);
+}
+
+.popular-image > img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the image */
+}
+
+.popular-activities {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the entire container */
+}
+.popular-activities:hover .popular-title h3 {
+    color: orangered;
+}
+.popular-heading>h2{
+    color: black;
+}
+.popular-content-box{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.popular-cards{
+    width: 23%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    box-shadow: 5px 5px #eee;
+    transition: transform 0.3s ease;
+}
+.popular-cards:hover{
+    transform: translateY(-10px);
+}
+.popular-image{
+    overflow: hidden;
+}
+.popular-image>img{
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.popular-content{
+    width: 100%;
+    padding: 10px 20px;
+}
+.location-icon{
+    color: #444;
+}
+.location-icon>p{
+    font-size: 1rem;
+    display: inline;
+    padding-left: 20px;
+}
+.popular-title{
+    padding-bottom: 10px;
+}
+.popular-title>h3{
+    font-size: 1.25rem;
+    margin-top: 20px;
+    color: black;
+}
+.star{
+    color: orangered;
+}
+.star>p{
+    color: black;
+    font-size: 1rem;
+    display: inline;
+    padding-left: 20px;
+}
+.from-days>p, .popular-footer>p>del{
+    color: #444;
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.days{
+    display: inline;
+}
+.from-days>p>span{
+    padding-left: 5px;
+}
+
+.call-to-action{
+    height: 50vh;
+    width: 100vw;
+    background: url(/assets/images/asset\ 35.jpeg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #888;
+    background-blend-mode: multiply;
+}
+.action-text{
+    width: 70%;
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:center ;
+}
+.cta{
+    color: orangered;
+    font-size: 1.5rem;
+    align-self: flex-start
+}
+.cta-desc{
+    color: white;
+    align-self: flex-start;
+}
+.action-text>h2{
+    font-size: 3rem;
+}
+.action-button{
+    width: 30%;
+    height: 100%;
+}
+.action-button>button{
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    animation: jump 1s ease-in infinite;
+    position: relative; /* Added to make 'top' and 'bottom' work */
+}
+@keyframes jump{
+    0%,50%, 100%{
+        top: 0;
+    }
+    25%{
+        top: -50px;
+    }
+    75%{
+        top: -20px;
+    }
+}
+
+.photo-gallery{
+    width: 100vw;
+}
+.gallery-title>h2{
+    font-size: 2rem;
+    color: black;
+}
+.photo-gallery>.container{
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container>.gallery-images>img{
+    width: 32%;
+}
+.gallery-images{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer{
+    margin-top: 50px;
+    width: 100vw;
+    background-color: black;
+}
+footer>.container{
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-card{
+    width: 25%;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-links{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    gap: 10px;
+}
+.footer-links>a{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.footer-last>p{
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
